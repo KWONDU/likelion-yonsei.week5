@@ -34,12 +34,20 @@ export default function ShowcaseHome() {
         ))}
       </div>
 
-      <Link
-        to="/shop"
-        className="block bg-blue-600 hover:bg-blue-700 text-white text-center py-4 rounded-xl text-lg font-semibold transition"
-      >
-        🛒 완성된 쇼핑몰 데모 보기 →
-      </Link>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <Link
+          to="/starter"
+          className="block border-2 border-gray-300 hover:border-gray-400 text-gray-700 text-center py-4 rounded-xl text-lg font-semibold transition"
+        >
+          ⚠️ Before 버전 보기
+        </Link>
+        <Link
+          to="/shop"
+          className="block bg-blue-600 hover:bg-blue-700 text-white text-center py-4 rounded-xl text-lg font-semibold transition"
+        >
+          🛒 After 버전 보기
+        </Link>
+      </div>
     </div>
   );
 }

@@ -16,6 +16,9 @@ import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 
+// Starter (Before 버전 데모)
+import StarterApp from "./starter/StarterApp";
+
 export default function App() {
   return (
     <CartProvider>
@@ -39,6 +42,9 @@ export default function App() {
           <Route path="products/:id" element={<ProductDetail />} />
           <Route path="cart" element={<Cart />} />
         </Route>
+
+        {/* Before 버전 (starter) */}
+        <Route path="starter" element={<StarterApp />} />
       </Routes>
     </CartProvider>
   );
